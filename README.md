@@ -1,4 +1,22 @@
-# Cordova plugin for [Firebase Analytics](https://firebase.google.com/docs/analytics/)
+# Forked from chemerisuk/cordova-plugin-firebase-analytics
+
+## Use the [only-analytics branch](https://github.com/tutormundi/cordova-plugin-firebase-analytics/tree/only-analytics) because it
+
+### uses an older version (1.1.1) of the original plugin
+
+Newer versions aren't compatible with the cordova versions bundled in Meteor 1.8.1
+
+### contains [a fix](https://github.com/chemerisuk/cordova-plugin-firebase-analytics/issues/91#issuecomment-450109950)
+
+which fixes an error we were having, likely due to conflict with the pods of phonegap-plugin-push
+
+## Thanks a lot to chemerisuk and ugnich!
+
+--------
+
+# Old description
+
+## Cordova plugin for [Firebase Analytics](https://firebase.google.com/docs/analytics/)
 
 [![NPM version][npm-version]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Twitter][twitter-follow]][twitter-url]
 
@@ -25,7 +43,7 @@
     $ cordova plugin add cordova-plugin-firebase-analytics
 
 If you get an error about CocoaPods being unable to find compatible versions, run
-    
+
     $ pod repo update
 
 Plugin depends on [cordova-support-google-services](https://github.com/chemerisuk/cordova-support-google-services) for setting up google services properly. Please read the [README](https://github.com/chemerisuk/cordova-support-google-services/blob/master/README.md) carefully in order to avoid common issues with a project configuration.
